@@ -20,3 +20,6 @@ Rite_CMS_v3.0.0
 Template Coffee
 
 DupScoutent v10.0.18
+
+Link download XAMPP x86 PHP 7.2.9 --> https://sourceforge.net/projects/xampp/files/XAMPP%20Windows/7.2.9/xampp-win32-7.2.9-0-VC15-installer.exe/download
+
