@@ -1,0 +1,11 @@
+Admin Default Access:
+Email: admin@mail.com
+Password: Password@123
+
+Manager Access:
+Email: manager@mail.com
+Password: manager123
+
+Admin Default Access:
+Email: zookeeper@mail.com
+Password: zookeeper123
