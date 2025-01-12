@@ -3,6 +3,9 @@ Aplicativos vulneráveis para windows
 
 Repositório para armazenamento de aplicativos vulneráveis para Windows
 
+
+# Aplicações:
+
 Badblue 2.7
 
 BarracudaDrive v6.5
