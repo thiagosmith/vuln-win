@@ -9,17 +9,37 @@ BarracudaDrive v6.5
 
 Car_Rental
 
+Clinic Queuing System 1.0
+
+Clinic_Hospital_PHP
+
 Clinic_PHP
 
+Human Resource Management System
+
+Petrol pump management software
+
 Pizza Ordering System in PHP
+
+Redcock-Farm
 
 Rejetto Http File Server 2.3
 
 Rite_CMS_v3.0.0
 
+Template Cyborg
+
+Upload-asp
+
+Zoo Management System
+
 Template Coffee
 
 DupScoutent v10.0.18
+
+Template site
+
+xoda-0.4.5
 
 Link download "XAMPP x86 PHP 7.2.9" --> https://sourceforge.net/projects/xampp/files/XAMPP%20Windows/7.2.9/xampp-win32-7.2.9-0-VC15-installer.exe/download
 
