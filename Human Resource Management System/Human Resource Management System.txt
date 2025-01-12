@@ -1,0 +1,11 @@
+Default Admin Access:
+[http://localhost/hrm]
+
+Email: admin@gmail.com
+Password: admin#123
+
+Sample Employee Access:
+[http://localhost/hrm/user]
+
+Email: mcooper@gmail.com
+Password: mcooper#123
