@@ -1,0 +1,133 @@
+Welcome to XODA - the KISSed Document manager!
+==============================================
+
+XODA is a KISSed (Keep It Simple and Stupid) System for Organizing Documents using AJAX.
+This is a (DMS) Document Management System without backend database, though making possible organizing files/directories by descriptions, filters and more.
+
+History
+-------
+My favorite web space provider - DreamHost - offers 50GB for "personal" use, meaning space for files not intended to be used for a web site. This was enough for the decision to put most of my personal files on their remote machine. Well, having almost the whole stuph out there - on a remote machine running a web server - requires a good tool for sorting and finding the right piece at the right moment.
+I looked at the most OpenSource Document Management Systems and had to acknowledge that most of them have a *SQL back-end for storing the "meta" information about the documents/files. None of them had everything I wanted. So, as you can imagine, the decision was made to write an own one.
+What I wanted was a "Simple and Stupid" system, storing the information in plain text or similar files ("XODA" uses plain php-files). It should be not so difficult to have a "file manager", which shows a description of a file/directory and allows applying additional filters on these items (some people prefer to call these filters "categories", "tags"...) for easier sorting. The features of a good file manager (moving, deleting, renaming, up- and downloading, creation of files/directories and editing of allowed files) should not be missed. All of this should be possible using fast solutions (AJAX) and possibly be available in few files keeping the overview of what is driving the system. It should be easy to hack for the purpose of allowing more users to improve it and make good suggestions.
+
+Changelog
+---------
+0.4.5: Preliminary mobile style was added.
+
+0.4.4: Interface for mobile devices was initialized. UTF-8 support was improved. A critical bug regarding unauthorized access of files was fixed.
+
+0.4.3: Improving advanced search including descriptions.
+
+0.4.2: Several bug fixes in saving and deleting of versions and descriptions of versions.
+
+0.4.1: Some system functions were rewritten using native PHP-functions and improving portability. Small bugs were fixed.
+
+0.4.0: The system for management of users and privileges was rebuilt. Own overlay javascript functions were developed allowing iBox.js-library to be removed. Small bugs were fixed.
+
+0.3.1: Small bugs regarding displaying a unprotected root directory and meta file determination were fixed.
+
+0.3.0: Per user root dir, server authentication option, anonymous access, and creating zip-archives were imlpemented, security was greatly improved and some bugs fixed.
+
+0.2.2: Portability was improved. Some potential security flaws were fixed. Force download was added.
+
+0.2.1: A small bug regarding short open tags was fixed.
+
+0.2.0: Search options and web based control of the timezone were added. External icons are now supported. Some bugs were fixed.
+
+0.1.6: Introducing Versioning!
+
+0.1.5: Improved portability of the php allowing usage on servers with more restrictive configuration.
+
+0.1.4: Bugfix: Install in root directories.
+
+0.1.3: Feature request implemented: sorting filters alphabetically.
+
+0.1.2: Bugfix: Downloading files with names containing spaces using Firefox.
+
+0.1.1: Some potential security pit-falls were fixed. Documentation was updated. HTTPS support was added.
+
+0.1.0: XODA version was not released for more than 3.5 years already. In this time a lot happened and the current release contains rewritten engine and a lot of new features. The changes would be too many to list them here. You would have to give it a try. Have fun! :)
+
+Features
+--------
+XODA targets the end-user allowing organizing of documents in a professional manner:
+- BSD license,
+- adding/editing descriptions of files and directories with color highlighting (like the GMail labels),
+- assigning filters to files and directories (optional),
+- sorting items in a directory "on the fly" based on different criteria,
+- getting detailed information about a file or directory including:
+    size,
+    type,
+    creation time,
+    number of files and directories (in a particular directory),
+    last modification time (which is editable, adding an additional sorting help),
+    preview of images as well as files set as editable (usually plain text files).
+- creating files and directories,
+- moving, renaming and deleting files and directories,
+- uploading (multiple) files,
+- transferring files to XODA from the Web using URL (without downloading to the local machine),
+- multiple users support with users management privileges and per user home,
+- server authentication option,
+- anonymous access with a public directory,
+- creating zip-archives,
+- support for file versioning,
+- web based front end for the preferences and style as well as changing the password and the management of users and privileges.
+
+Upgrade
+-------
+Open 'config.sample.php' and set your username (instead of 'admin'). You could also copy the md5 string (the long one with the numbers and letters set for the password, e.g. 'password' => 'a68e142815fdda868de0551fc6675e65')
+to preserve your password. Otherwise you would have to set it again over the browser. Please consider copying things like '$_top_content' or '$_colors' if you have made significant changes there. You can also change the
+values of any of the constants according to your needs and your original 'config.php' file.
+Then rename 'config.sample.php' to 'config.php'.
+You can also just rename 'config.sample.php' to 'config.php' without changing anything (but the username!) in 'config.sample.php'. In this case you should redo the complete configuration on the browser.
+
+Install
+-------
+Installing XODA is easy. Unpack the file xoda-*tar.bz2 (`tar -jxvf xoda-*tar.bz2`) wherever you want.
+Open "config.sample.php" with you favorite text editor and set the defined constants in the beginning of the file to suit your needs.
+Important is to set the constant "ROOT_DIR". This is the directory, where your files are.
+You should set a directory outside your web directory to be ROOT_DIR!
+Should you still (against any reasonable advice!) decide to keep ROOT_DIR in your web directory, you should at least let the Apache web server protect it by .htaccess/.htpasswd files. Please take a look at the excellent DreamHost Wiki (http://wiki.dreamhost.com/Htaccess) how to do this the best way!
+
+Login
+Username: admin (if you didn't change it in "config.php")
+Password: xoda
+You should change your password at this point from "Settings -> Password".
+
+Please take a look at the XODA-Manual (http://xoda.org/article/xoda-manual) for a lot more information on how it works!
+
+Requirements
+------------
+On the server side:
+- Apache web server supporting PHP and set 'AllowOverride FileInfo' (allowing RewriteEngine).
+I didn't test XODA on other servers. It surely will not(!) work on web servers produced by the Redmond, WA based company named Microsoft. Official releases of XODA will never support these servers! You are free to hack it around for getting it working under whichever server you want.
+- PHP4/PHP5. Enabled POSIX functions is recommended for getting user friendly information about file owner and group.
+
+On the client side:
+- A browser! Like Firefox or Google Chrome.
+- Enabled JavaScript.
+I think there are no more requirements on the server or on the client side. I'll add some if I find them. You are encouraged to give me feedback about this topic.
+
+License
+-------
+XODA is released under the BSD-License (http://www.opensource.org/licenses/bsd-license.php).
+
+Icons are released under Creative Commons Attribution 3.0 license (http://p.yusukekamiyamane.com), except for the
+OpenOffice.org (http://ui.openoffice.org/VisualDesign/OOo30MimeType.html#docs), EXE and DLL (http://www.everaldo.com) icons which are LGPL-licensed.
+Thank you for the great artwork! :)
+
+Credits
+-------
+XODA uses the following great libraries:
+- sorttable (http://www.kryogenix.org/code/browser/sorttable) for sorting table columns on the fly.
+It is licensed under the X11 license which is compatible with the BSD license XODA is being released under!
+Big Thank you to Stuart Langridge for this excellent piece of code! :)
+
+- zipstream-php (http://pablotron.org/software/zipstream-php/) for creating zip-archives on the fly.
+It's license is also compatible to the BSD license.
+Big Thank you to Paul Duncan for this excellent piece of code! :)
+
+Authors
+-------
+betso (betso_AT_users_DOT_sourceforge_DOT_net)
+François Harvey (contact_AT_francoisharvey_DOT_ca)
