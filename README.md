@@ -27,6 +27,6 @@ Link download "Adobe ColdFusion 2021" --> https://drive.google.com/drive/folders
 
 Link download "PaperCut NG - version 21" --> https://cdn.papercut.com/web/products/ng-mf/installers/ng/21.x/pcng-setup-21.2.13.67400.exe
 
-Link download "Jenkins Version 2" --> https://get.jenkins.io/windows-stable-rc/jenkins-2.0.zip
+Link download "Jenkins Version 2.441" --> https://archives.jenkins-ci.org/windows/2.441/jenkins.msi
 
 Link download "Java SE Development Kit 7u80" --> https://www.oracle.com/br/java/technologies/javase/javase7-archive-downloads.html
