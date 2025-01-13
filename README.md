@@ -53,3 +53,5 @@ Link download "PaperCut NG - version 21" --> https://cdn.papercut.com/web/produc
 Link download "Jenkins Version 2.441" --> https://archives.jenkins-ci.org/windows/2.441/jenkins.msi
 
 Link download "Java SE Development Kit 7u80" --> https://www.oracle.com/br/java/technologies/javase/javase7-archive-downloads.html
+
+Link download "Tomcat 9.0.98" --> https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.98/bin/apache-tomcat-9.0.98.exe
